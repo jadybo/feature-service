@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: Mettle Feature Service
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+
+#  jpa:
+#    database: POSTGRESQL
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: none
+#  datasource:
+#    platform: postgres
+#    url: jdbc:postgresql://localhost:5432/
+#    username: postgres
+#    password: password
+#    driverClassName: org.postgresql.Driver
